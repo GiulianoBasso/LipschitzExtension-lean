@@ -1,6 +1,6 @@
 # LipschitzExtension
 
-![build](https://github.com/GiulianoBasso/Grunbaum-lean/actions/workflows/build.yml/badge.svg)
+![build](https://github.com/GiulianoBasso/LipschitzExtension-lean/actions/workflows/build.yml/badge.svg)
 
 A Lean 4 / Mathlib library of Lipschitz extension theorems. It formalizes
 
