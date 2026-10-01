@@ -37,6 +37,17 @@ The long-term goal is an exhaustive library of Lipschitz extension theorems.
   (`weak.linter.mathlibStandardSet`, including the header linter), and `#lint` passes.
 * Released under the Apache 2.0 license (`LICENSE`).
 
+## Authorship
+
+The Lean code in this repository, including the vendored libraries, was written by Claude, an AI
+model developed by Anthropic (model identifiers claude-opus-5-5 and claude-fable-5-1), in sessions
+guided by Giuliano Basso. He chose the statements to formalize, built the project, ran the axiom
+check in `scripts/CheckAxioms.lean` and compared the statements in `LipschitzExtension/Main.lean` with the
+errata. 
+
+
+
+
 ## Using the library
 
 The main theorems are stated like Mathlib's `LipschitzOnWith.extend_real`: a map `f : X → Y`
