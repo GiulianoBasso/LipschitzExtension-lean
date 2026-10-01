@@ -417,31 +417,6 @@ name = "LipschitzExtension"
 
 Then `import LipschitzExtension` (or individual modules) works.
 
-## GitHub
-
-The folder can be pushed as it is to a new GitHub repository. The workflows in
-`.github/workflows` are those of the standard Lean project template (`lake new … math`):
-
-* `lean_action_ci.yml` builds the library on every push and pull request and publishes the
-  documentation (doc-gen4) on GitHub Pages;
-* `update.yml` (started by hand) checks for a newer Mathlib release and opens a pull request that
-  updates the dependency, or an issue if the update breaks the build;
-* `create-release.yml` creates a release tag whenever `lean-toolchain` changes.
-
-For the documentation and the update workflow, in the repository settings: under
-**Actions → General** check "Allow GitHub Actions to create and approve pull requests", and under
-**Pages** select "GitHub Actions" as the source. The citation keys used in the docstrings
-(`[Basso2024]`, …) are defined in `docs/references.bib`.
-
-Once the repository is on GitHub, another Lake project (with the same Mathlib version) can use the
-library as a dependency:
-
-```
-[[require]]
-name = "LipschitzExtension"
-git = "https://github.com/<user>/<repository>"
-rev = "main"
-```
 
 ## Layout
 
